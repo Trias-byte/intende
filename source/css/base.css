@@ -1,0 +1,240 @@
+
+/* БЛОК ОСНОВНЫХ ПРАВИЛ*/
+html, body{
+    margin: 0px; 
+    padding: 0;
+    font-family: Roboto, "Helvetica Neue";
+    
+}
+
+h2,  h3, h4, h5, nav > ul > li{
+    
+    font-weight: 900;
+}
+h2,  h3, h4, h5{
+    text-shadow: 0px 0.1em 6px rgba(0, 0, 0, 0.25);
+}
+
+a{
+    text-decoration: none;
+}
+
+.mgl{
+    margin:left;
+}
+.mgr{
+    margin:right;
+}
+
+.btn-action{
+    color: #fff;
+    font-size: 3vw;
+    padding: 5%;
+}
+
+.hidden{
+    display: none;
+}
+
+.hidden{
+    display: none;
+}
+
+.red{
+    color: #FFA28D;
+    background-color: #FFA28D;
+}
+.yellow{
+    color: #FFD88C;
+    background-color: #FFD88C;
+}
+.blue{
+    color: #909CFF;
+    background-color: #909CFF;
+}
+
+
+/* РАБОТА С HEADER */
+header{
+    position: relative;
+    background-color:#fff;
+    border-image: url("../img/wave-header.svg");
+    display: grid;
+    display: -moz-grid;
+    grid-template-columns: 300px 1fr ;
+    gap: 5px;
+    padding: 10px 20px 5px 20px;
+    z-index: 5;
+}
+
+.logo{
+    border: solid 1px rgba(0, 0, 0, 0.3);
+    padding-left: 10%;
+    padding-right: 10%;
+    border-radius: 45px;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo > img{
+    width:50%;
+}
+
+.logo > span{
+    font-size: 30px;
+    font-weight: 900;
+    color:#909CFF;
+}
+
+nav{
+    padding: auto, 0, auto, 0;
+    font-size: min(3vw, 32px);
+    font-weight: 900;
+}
+
+nav > ul{
+    list-style: none;
+    display: -webkit-flex; 
+    -webkit-justify-content: flex-start;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav > ul > li{
+    margin-left: 5%;
+}
+nav > ul > li:nth-child(3n+1) > a{
+    color: #FFD88C;
+}
+nav > ul > li:nth-child(3n+2) > a{
+    color: #FFA28D;
+}
+
+nav > ul > li:nth-child(3n+3){
+    color: #909CFF;
+}
+
+/* РАБОТА С ПЕРВЫМ ЭКРАНОМ */
+#main > .lines > div{
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+#main > .lines > div  > h2{
+    margin:0;
+    letter-spacing: 0.1em;
+    margin-left: calc(60% - 17vw);
+    font-size: 10vw;
+    font-weight: 900;
+    -webkit-text-stroke-width: 0.08em;
+    -webkit-text-stroke-color: white;
+}
+
+#main > .lines > div.red{
+    transform: rotate(0.0025turn);
+}
+
+#main > .lines > div.yellow{
+    position: relative;
+    z-index: 1;
+    transform: rotate(-0.0060turn);
+}
+#main > .lines > div.yellow > h2{
+    margin-left: calc(70% - 10vw);
+}
+#main > .lines > div.blue{
+    transform: rotate(0.005turn);
+}
+
+#main > .action-panel{
+    position: absolute;
+    top:15vh;
+    left:2vw;
+    z-index:9999;
+    padding: 2%;
+    width : 30%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+
+    border-radius: 50px;
+    align-items: center;
+}
+
+#main > .action-panel > div.slider1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#main > .action-panel > div.slider1 >img.photo{
+    width:50%;
+    border-radius: 20px;
+}
+#main > .action-panel > div.slider1 >img.arrow{
+    width: 10%
+}
+#main > .action-panel > h3{
+    margin:0;
+    font-size: 4vw;
+    color:#BEA7FF;
+    -webkit-text-stroke-width: 0.03em;
+    -webkit-text-stroke-color: #7559C6;
+}
+
+#main > .action-panel > .btn-action{
+    margin:10px;
+    background-color:#FFA28D;
+    box-shadow: max(1vh,1vw)  max(1vh,1vw) 0px 1px #e68974;
+}
+
+/* РАБОТА С БЛОКОМ ABOUT */
+#about{
+    margin-top: 5vh;
+}
+#about > h2{
+    margin: 0;
+    margin-bottom: 4%;
+    font-size: 9vw;
+    letter-spacing: 0.1em;
+    -webkit-text-stroke-width: 0.05em;
+    color: #fff;
+    -webkit-text-stroke-color: #FFA28D;
+}
+#about > .lines > div{
+    padding: 0;
+    margin: 0;
+    margin-left: auto;
+    position: relative;
+    transform: rotate(0.02turn);
+    font-size: 3.5vw;
+    color:#fff;
+}
+#about > .lines > .blue{
+    width: 40%;
+}
+#about > .lines > .red{
+    width: 50%;
+}
+
+#about > .lines > div > p{
+    margin:0;
+    padding:1vw;
+}
+
+#about > .lines > .yellow{
+    top:-2.5vw;
+}
+
+#about > .lines > .yellow > p{
+    margin-left:40%;
+}
+
+#about > img {
+    width: 28%;
+    position: relative;
+    top: -35vw;
+    left: 3.5vw;
+    box-shadow: max(1.5vh,1.5vw)  max(1.5vh,1.5vw) 0px 1px #AD90FF;
+}
+/* РАБОТА С БЛОКОМ */
